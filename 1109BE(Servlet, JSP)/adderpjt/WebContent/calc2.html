@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 덧셈기 </title>
+<style>
+ #wrapper {	width: 300px; margin: 50px auto; padding: 10px;	border: 10px solid #ddd; }
+ input {	padding : 5px;	}
+ form{ width : 120px; height : 20px auto;	}
+ #content {	width: 200px; margin: 20px auto; border: 5px solid #ddd; padding: 20px;	border-radius: 20px; }
+ div{ margin-top: 10px; }
+ #buttons{	width: 120px; text-align: center;	}
+</style>
+</head>
+<body>
+<!-- 입력 하나짜리 계산기 -->
+<div id="wrapper">
+	<div id="content">
+	<form action="calc2" method="post">
+	<p><strong>사칙연산 계산기</strong></p>
+		<div>
+			<label>입력 1:
+				<input type="text" value="0" size="3" name="value"><!-- value는 변수명. -->
+			</label>
+		</div>
+		
+		<div id="buttons">
+			<input type="submit" name="operator" value="+"><!-- name 값을 따로 저장 할 필요가 없다. -->
+			<input type="submit" name="operator" value="-">
+			<input type="submit" name="operator" value="x">
+			<input type="submit" name="operator" value="/">
+			<input type="submit" name="operator" value="=">
+		</div>
+		
+	</form>
+	</div>
+	</div>
+</body>
+</html>

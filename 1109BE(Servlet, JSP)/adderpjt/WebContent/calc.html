@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 덧셈기 </title>
+<style>
+	input {
+		padding : 10px;
+	}
+	div{
+		margin-top: 10px;
+	}
+</style>
+</head>
+<body>
+<h1>계산할 값을 입력하세요.</h1>
+	<form action="calc" method="post">
+		<div>
+			<label>숫자 1:
+				<input type="text" value="0" size="3" name="x">
+			</label>
+		</div>
+		
+		<div>
+			<label>숫자 2:
+				<input type="text" value="0" size="3" name="y">
+			</label>
+		</div>
+		
+		<div>
+			<input type="submit" name="operator" value="덧셈"><!-- name 값을 따로 저장 할 필요가 없다. -->
+			<input type="submit" name="operator" value="뺄셈">
+			<input type="submit" name="operator" value="곱셈">
+			<input type="submit" name="operator" value="나눗셈">
+		</div>
+		
+	</form>
+</body>
+</html>
